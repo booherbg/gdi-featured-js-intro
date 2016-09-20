@@ -1039,13 +1039,13 @@ body .markdown-body
    experimenting with new code, and for viewing console output, 
    such as console.log('hello world');
 </code></pre></p>
-<p>Inline Javascript looks like this:</p>
+<p>Inline Javascript lives between script tags. Notes:</p>
 <ul>
 <li><code>&lt;script&gt;&lt;/script&gt;</code> tags</li>
 <li>semi-colon to separate lines</li>
-<li>alert and console are simple ways of program output</li>
-<li>multi-line comments <code>/* */</code></li>
-<li>single line comments <code>//</code></li>
+<li>alert and console are simple ways to direct program output</li>
+<li>multi-line comments: <code>/* */</code></li>
+<li>single line comments: <code>//</code></li>
 </ul>
 <pre><code class="javascript">&lt;script&gt;
    alert('hello world!');
@@ -1057,13 +1057,13 @@ body .markdown-body
 </code></pre>
 
 <p>Linking to an external script file looks like this:<br />
-<pre><code>&lt;script src=&quot;path/to/file.js&quot;&gt;&lt;/script&gt;
+<pre><code class="javascript">&lt;script src=&quot;path/to/file.js&quot;&gt;&lt;/script&gt;
 </code></pre></p>
 <p>You can use document.write to output directly to the DOM:<br />
-<pre><code>document.write('hello world');
+<pre><code class="javascript">document.write('hello world');
 </code></pre></p>
 <p>Variables look like this:<br />
-<pre><code>var myVariable; // this variable is not initialized (null value)
+<pre><code class="javascript">var myVariable; // this variable is not initialized (null value)
 var myVariable = 5; // this variable has the value of 5 (integer)
 myVariable = 10; // a new value is applied to myVariable
 
@@ -1078,7 +1078,7 @@ var
 alert('I have ' + numberOfKittens + ' kittens!'); 
 </code></pre></p>
 <p>Number (float / integer) operators. Aka math.<br />
-<pre><code>var numberOfKittens = 5;
+<pre><code class="javascript">var numberOfKittens = 5;
 var numberOfPuppies = 4;
 var totalCutenessMetric = numberOfKittens * cutenessRating; // math
 
@@ -1092,10 +1092,10 @@ var totalCutenessMetric = numberOfKittens * cutenessRating; // math
  */
 </code></pre></p>
 <p>Escaping apostrophes:<br />
-<pre><code>   console.log('I\'d more kitties please');
+<pre><code class="javascript">   console.log('I\'d more kitties please');
 </code></pre></p>
 <p>String operators<br />
-<pre><code>   var kittyName = 'Furry';
+<pre><code class="javascript">   var kittyName = 'Furry';
    var fullName = kittyName + ' McFluffyFace';
    console.log(fullName); // Outputs 'Furry McFluffyFace'
 
@@ -1104,7 +1104,7 @@ var totalCutenessMetric = numberOfKittens * cutenessRating; // math
    console.log('otherKittyName'); // Outputs 'Sir Kevin Purs-a-lot'
 </code></pre></p>
 <p>Functions<br />
-<pre><code>   function kittyFacts() {
+<pre><code class="javascript">   function kittyFacts() {
       console.log('Some kittens have extra fully functional toes.');
    }
 
@@ -1114,7 +1114,7 @@ var totalCutenessMetric = numberOfKittens * cutenessRating; // math
    kittyFacts();
 </code></pre></p>
 <p>Functions: with input values. Aka arguments:<br />
-<pre><code>   function adoptKitty(kittyName) {
+<pre><code class="javascript">   function adoptKitty(kittyName) {
       var fullName = kittyName + ' McAllister';
       console.log('I choose you! Your new name is ' + fullName + '!');
    }

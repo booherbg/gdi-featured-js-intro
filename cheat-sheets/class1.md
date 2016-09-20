@@ -48,18 +48,18 @@ Inline Javascript lives between script tags. Notes:
 ```
 
 Linking to an external script file looks like this:
-```
+``` javascript
 <script src="path/to/file.js"></script>
 ```
 
 You can use document.write to output directly to the DOM:
-``` 
+``` javascript
 document.write('hello world');
 ```
 
 
 Variables look like this:
-```
+``` javascript
 var myVariable; // this variable is not initialized (null value)
 var myVariable = 5; // this variable has the value of 5 (integer)
 myVariable = 10; // a new value is applied to myVariable
@@ -76,7 +76,7 @@ alert('I have ' + numberOfKittens + ' kittens!');
 ```
 
 Number (float / integer) operators. Aka math.
-```
+``` javascript
 var numberOfKittens = 5;
 var numberOfPuppies = 4;
 var totalCutenessMetric = numberOfKittens * cutenessRating; // math
@@ -92,12 +92,12 @@ var totalCutenessMetric = numberOfKittens * cutenessRating; // math
 ```
 
 Escaping apostrophes:
-```
+``` javascript
    console.log('I\'d more kitties please');
 ```
 
 String operators
-```
+``` javascript
    var kittyName = 'Furry';
    var fullName = kittyName + ' McFluffyFace';
    console.log(fullName); // Outputs 'Furry McFluffyFace'
@@ -108,7 +108,7 @@ String operators
 ```
 
 Functions
-```
+``` javascript
    function kittyFacts() {
       console.log('Some kittens have extra fully functional toes.');
    }
@@ -120,7 +120,7 @@ Functions
 ```
 
 Functions: with input values. Aka arguments:
-```
+``` javascript
    function adoptKitty(kittyName) {
       var fullName = kittyName + ' McAllister';
       console.log('I choose you! Your new name is ' + fullName + '!');
