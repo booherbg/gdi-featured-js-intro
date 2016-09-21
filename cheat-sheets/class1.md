@@ -70,9 +70,8 @@ let cutenessRating = 9.6; // float type (decimal number)
 
 // proper way of making a read-only constant (can't be changed later)
 const numberofCats = 5; 
-var
- v// how to use a variable (or constant)
-alert('I have ' + numberOfKittens + ' kittens!'); 
+// how to use a variable (or constant)
+alert('I have ' + numberofCats + ' cats!'); 
 ```
 
 Number (float / integer) operators. Aka math.
