@@ -1,7 +1,7 @@
 Cheat Sheet: Intro to Javascript
 --------------------------------
 
-September 27 2016 / Blaine Booher
+September 22 2016 / Blaine Booher
 
    - Block vs Global Scope
    - String Comparison (== === != !==)
